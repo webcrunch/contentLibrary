@@ -1,14 +1,17 @@
 var express = require('express'),
 app = express(),
+multer = require('multer'),
 boddyparser = require('body-parser');
 
 app.use(boddyparser.urlencoded({extended: true}));
 app.use(boddyparser.json());
 var showAll = function(req,res){
-	
+
 }
 var uploadFile = function(req,res){
-	console.log( req.body.files);
+	
+	console.log(req.displayImage);
+	res.json({status: "OK"});
 }
 
 // skapar en routes för post request och ska se vad som kommer tillbaka till servern 
