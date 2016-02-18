@@ -8,6 +8,7 @@ app.use(boddyparser.json());
 var showAll = function(req,res){
 
 }
+
 var uploadFile = function(req,res){
 	
 	console.log(req.displayImage);
