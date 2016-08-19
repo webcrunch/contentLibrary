@@ -27,5 +27,5 @@ app.config(["$routeProvider", "$locationProvider", "uiGmapGoogleMapApiProvider",
     });
 
     $locationProvider.html5Mode(true);
-    
-}]);
+   
+ }]);

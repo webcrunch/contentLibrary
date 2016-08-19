@@ -39,23 +39,10 @@
     <script src="controllers/about.js"></script> -->
     
     <!-- directives -->
-    <!-- <script src="/directives/headerNav.js"></script>
-    <script src="/directives/footerSticky.js"></script>
-    <script src="/directives/headerCarousel.js"></script>
-    <script src="/directives/homeSearch.js"></script>
-    <script src="/directives/aboutTabs.js"></script>
-    <script src="/directives/subNavObject.js"></script>
-    <script src="/directives/buttonDirectives.js"></script>
-
-    <script src="/directives/objects/objektShow.js"></script>
-    <script src="/directives/objects/villorShow.js"></script>
-    <script src="/directives/objects/lagenheterShow.js"></script>
-    <script src="/directives/objects/pagination.js"></script>
-    <script src="/directives/objects/fyrafyra.js"></script>
-    <script src="/directives/objects/contactForm.js"></script>
-
-    <script src="/directives/myModalSeller.js"></script> -->
-
+     <script src="/directives/label.js"></script>
+     <script src="/directives/content.js"></script>
+     <script src="/directives/nav.js"></script>
+    
    <!--  <script src="/directives/detailedObject/myCarousel.js"></script>
     <script src="/directives/detailedObject/enfastInfo.js"></script>
     <script src="/directives/detailedObject/myMap.js"></script>
@@ -68,42 +55,18 @@
     <!-- <script src="/modals/mySellerModalInstance.js"></script> -->
 
     <!-- all CSS -->
-    <!-- <link rel="stylesheet" type="text/css" href="libs/jquery-ui-1.11.4/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/jquery-ui-1.11.4/jquery-ui.min.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="libs/ng-alertify.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/custom-scrollbar.css">
-  -->   
+    
   </head>
 <body>
 
   
-    <div id="wrapper">
-    
-            <header-nav></header-nav>
-            <header-carousel></header-carousel>
-        
-        <div class="container ng-scope">
-        
+
             <ng-view> </ng-view>
-            <insert-about></insert-about>
-            <insert-seller></insert-seller> 
-            <insert-object></insert-object>
-
-        </div>
-      
-        <footer>
-
-            <footer-sticky></footer-sticky>
-        
-        </footer>
-        
-    </div>
-      
-	<!-- <form action="/fileLoad" method="post", enctype="multipart/form-data">
-		<input type="file" name="displayImage"><br />
-		<button type="submit">Upload</button>
-	</form>
-	 -->
+            
 </body>
 </html>
