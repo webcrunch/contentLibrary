@@ -19,7 +19,7 @@ var uploadFile = function(req,res){
 // skapar en routes för post request och ska se vad som kommer tillbaka till servern 
 app.post('/fileLoad', uploadFile);
 
-app.use(express.static('public'));
+app.use(express.static('www'));
 var server = app.listen(80, function(){
 	var port = server.address().port;
 console.log("Server started. Listening to connections on port " + port );
