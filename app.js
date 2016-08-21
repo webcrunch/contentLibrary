@@ -23,15 +23,17 @@ var upload = multer({storage: storage}).single('photo');
 
 //Posting the file upload
 app.post('/upload', function(request, response) {
-  upload(request, response, function(err) {
-  if(err) {
-    console.log('Error Occured');
-    return;
-  }
-  console.log(request.file);
-  response.end('Your File Uploaded');
-  console.log('Photo Uploaded');
-  })
+  // upload(request, response, function(err) {
+  // if(err) {
+  //   console.log('Error Occured');
+  //   return;
+  // }
+  
+  // response.end('Your File Uploaded');
+  // console.log('Photo Uploaded');
+  // })
+  response.json(request.body.dd);
+  
 });
 
 
