@@ -2,6 +2,6 @@ $(function() {
 
 var button = $("#upload");
 button.click(function() {
-	console.log("click");
+	console.log($("#displayImage").val());
 });
 });
