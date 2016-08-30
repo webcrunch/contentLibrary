@@ -13,11 +13,18 @@
 	</form>
  -->
 
- 	<input type="file" id="displayImage"><br />
+ 	<!-- <input type="file" id="displayImage"><br />
 		<button type="submit" id="upload">Upload</button>
 
 
+ -->
+ 	
 
+<form action='/rest/ocr' id='imageUploadForm' method='post' enctype='multipart/form-data'>
+    <input class='vwide upload-button' type='file' name='file'>
+
+    <input type='submit'>
+</form>
 
 </body>
 </html>
